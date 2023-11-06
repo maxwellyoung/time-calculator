@@ -52,6 +52,10 @@ export default function Calc() {
     const newMinutes = Math.floor((totalSeconds % 3600) / 60);
     const newSeconds = totalSeconds % 60;
 
+    // Calculate the number of days
+    const days = Math.floor(newHours / 24);
+    newHours %= 24;
+
     if (newHours >= 12) {
       isAM = false;
     }
@@ -62,7 +66,12 @@ export default function Calc() {
     const result = `${String(newHours).padStart(2, "0")}:${String(
       newMinutes,
     ).padStart(2, "0")}:${String(newSeconds).padStart(2, "0")}`;
-    setTime({ formatted: result, isAM });
+    let output = result;
+    if (days > 0) {
+      const dayString = days === 1 ? "day" : "days";
+      output = `+${days} ${dayString} ${result}`;
+    }
+    setTime({ formatted: output, isAM });
   };
 
   return (
