@@ -18,8 +18,8 @@ export default function Calc() {
       return;
     }
 
-    let inputHours = parseInt(inputTimeArray[0]);
-    const inputMinutes = parseInt(inputTimeArray[1]);
+    let inputHours = parseInt(inputTimeArray[0]!);
+    const inputMinutes = parseInt(inputTimeArray[1]!);
 
     if (
       isNaN(inputHours) ||
