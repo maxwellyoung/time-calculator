@@ -1,28 +1,55 @@
-# Create T3 App
+# Time Calculator
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+Time Calculator is a simple web application built with React that allows users to add a duration to a given time and see the result. This tool is useful for calculating the time after adding hours, minutes, and seconds to a specific time.
 
-## What's next? How do I make an app with this?
+## Features
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+- Input a starting time in HH:MM format.
+- Add hours, minutes, and seconds to the starting time.
+- Calculate the resulting time.
+- Determine if the result is in AM or PM format.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## Usage
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+1. Input Time: Enter the starting time in HH:MM format using the provided input field.
 
-## Learn More
+2. Add Duration: Add the number of hours, minutes, and seconds you want to add to the starting time. You can input values for each field.
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+3. Calculate: Click the "Calculate" button to see the resulting time.
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+4. Result: The resulting time will be displayed in HH:MM:SS format, along with whether it's AM or PM.
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+## Mobile-Friendly
 
-## How do I deploy this?
+The Time Calculator is designed to be mobile-friendly, ensuring a smooth experience on both desktop and mobile devices.
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+## Getting Started
+
+To run the Time Calculator locally, follow these steps:
+
+1. Clone the repository to your local machine:
+
+git clone https://github.com/yourusername/time-calculator.git
+
+2. Navigate to the project directory:
+   cd time-calculator
+
+3. Install dependencies:
+   npm install
+
+4. Start the development server:
+   npm start
+
+5. Open your web browser and go to `http://localhost:3000` to use the Time Calculator.
+
+## Author
+
+- Maxwell Young
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE.md).
+
+Feel free to contribute, report issues, or suggest improvements.
+
+Happy calculating!
